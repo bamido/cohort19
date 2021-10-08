@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fieldset & legend Demo</title>
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Bio Data</legend>
+				
+				<p>
+					<label for="fullname">Fullname</label>
+					<input type="text" name="fullname" id="fullname" >
+				</p>
+				
+				<p>
+					<label for="matric">Matric No</label>
+					<input type="text" name="matric" id="matric" >
+				</p>
+				
+				<p>
+					<label>Department<label>
+					<select name="dept" id="dept">
+						<option value="">Choose Department</option>
+						<option value="1">Computer Science</option>
+						<option value="2">Sociology</option>
+						<option value="3">Bio-Chemistry</option>
+						<option value="4">English</option>
+						<option value="5">French</option>
+					</select>
+				</p>
+				
+				<p>
+					<label for="dateofbirth">Date of Birth</label>
+					<input type="date" name="dateofbirth" id="dateofbirth" >
+				</p>
+				
+				<p>
+					<label for="phoneno">Phone Number</label>
+					<input type="text" name="phoneno" id="phoneno" >
+				</p>				
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>Next of Kin</legend>
+				<p>
+					<label for="kinfullname">Fullname</label>
+					<input type="text" name="kinfullname" id="kinfullname">					
+				</p>
+				<p>
+					<label>Relationship<label>
+					<select name="relationship" id="relationship">
+						<option value="">Choose Relationship</option>
+						<option value="1">Father</option>
+						<option value="2" selected>Mother</option>
+						<option value="3">Uncle</option>
+						<option value="4">Aunt</option>
+						<option value="5">Others</option>
+					</select>
+				</p>
+				
+				<p>
+					<label for="kinphoneno">Phone Number</label>
+					<input type="text" name="kinphoneno" id="kinphoneno" >
+				</p>
+				
+				<p>
+					<label for="emailaddress">Email Address</label>
+					<input type="email" name="emailaddress" id="emailaddress" >
+				</p>
+				
+				<p>
+					<label for="address">Contact Address</label>
+					<textarea name="address" id="address"></textarea>
+				</p>
+				
+			
+			</fieldset>
+			
+			<fieldset>
+				<legend>Medical Record</legend>
+				<p>
+					<label for="genotype">Genotype</label>
+					<select name="genotype" id="genotype">
+						<option value="">Choose Genotype</option>
+						<option value="1">AA</option>
+						<option value="2">AS</option>
+						<option value="3">SS</option>
+						<option value="4">AC</option>
+					</select>
+					
+				</p>
+				
+				<p>
+					<label for="bloodgroup">Blood Group</label>
+					<input type="radio" name="bloodgroup" id="bloodgroup1" value="1">
+					<label for="bloodgroup1">O<sup>+</sup></label>
+					
+					<input type="radio" name="bloodgroup" id="bloodgroup2" value="2">
+					<label for="bloodgroup2">O-</label>
+					
+					<input type="radio" name="bloodgroup" id="bloodgroup3" value="3">
+					<label for="bloodgroup3">AB</label>
+				</p>
+			
+			</fieldset>
+			<input type="reset" name="reset" value="Clear Form">
+			<input type="submit" name="submit" value="Add Student">
+		
+		</form>
+	
+	</body>
+
+</html>

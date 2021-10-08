@@ -1,0 +1,17 @@
+body{
+	/*background: skyblue url('../images/flowers.jpg') no-repeat right center; */
+	background: linear-gradient(to left, orange, tomato);
+}
+
+h1{
+	background-color: tomato;	
+}
+
+p{
+	background-color: violet
+}
+
+header, footer{
+	
+	border:4px solid #000;
+}

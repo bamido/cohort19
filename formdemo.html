@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Elements Demo</title>
+	</head>
+	<body>
+		<fieldset>
+			<legend>Intructions</legend>
+			
+			<p>
+				A short story is a piece of prose fiction that typically can be read in one 
+sitting and focuses on a self-contained incident or series of linked 
+incidents, with the intent of evoking a single effect or mood. 
+The short story is one of the oldest types of literature and has 
+existed in the form of legends, mythic tales, folk tales, fairy tales, 
+fables and anecdotes in various ancient communities across the world. 
+The modern short story developed in the early 19th century.
+"A Good Man is Hard to Find" by Flannery O'Connor
+O'Connor delivers an unsettling, satirical story of a family road trip gone 
+horribly awry. When a grandmother tries to direct the family to her 
+childhood home, she actually leads them right into the clutches of The 
+Misfit, a dangerous character that will stick with you long after the last 
+sentence.
+			</p>
+			
+		</fieldset>
+		
+		<fieldset>
+			<legend>Registration Details</legend>
+			<form action="" method="post">
+				<p>
+					<label for="firstname">Firstname</label>
+					<input type="text" name="firstname" id="firstname" autocomplete="off" size="30" maxlength="10" >
+				</p>
+				
+				<p>
+					<label for="lastname">Lastname</label>
+					<input type="text" name="lastname" id="lastname">
+				</p>
+				
+				<p>
+					<label for="emailaddress">Email Address</label>
+					<input type="email" name="emailaddress" id="emailaddress">
+				</p>
+				
+				<p>
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password">
+				</p>
+				
+				<p>
+					<label>Gender</label>
+					<input type="radio" name="gender" id="gender1" value="Male">
+					<label for="gender1">Male</label>
+					
+					<input type="radio" name="gender" id="gender2" value="Female" checked>
+					<label for="gender2">Female</label>
+					
+					<input type="radio" name="gender" id="gender3" value="Other">
+					<label for="gender3">Other</label>
+				
+				</p>
+				
+				<p>
+					<label for="resume">Upload Resume</label>
+					<input type="file" name="resume" id="resume" multiple>
+				</p>
+				
+				<p>
+					<label>Cities Visited</label><br>
+					<input type="checkbox" name="city1" id="city1" value="kano">
+					<label for="city1">Kano</label><br>
+					
+					<input type="checkbox" name="city2" id="city2" value="jos">
+					<label for="city2">Jos</label><br>
+					
+					<input type="checkbox" name="city3" id="city3" value="kaduna">
+					<label for="city3">Kaduna</label><br>
+					
+					<input type="checkbox" name="city4" id="city4" value="benin">
+					<label for="city4">Benin City</label><br>
+					
+					<input type="checkbox" name="city5" id="city5" value="ibadan">
+					<label for="city5">Ibadan</label>
+					
+				</p>
+				
+				
+				<p>
+					<label for="comment">Comments</label>
+					<textarea name="comment" id="comment" rows="15" cols="55"></textarea>
+				</p>
+				
+				<p>
+					<label>State</label>
+					<select name="state" id="state">
+						<option value="">Choose State</option>
+						<option value="1">Abia</option>
+						<option value="2">Anambra</option>
+						<option value="3" selected>Cross River</option>
+						<option value="4">Delta</option>
+						<option value="5">Edo</option>
+						<option value="6">Enugu</option>
+						<option value="7">Imo</option>
+					</select>
+				</p>
+				
+				<p>
+					<label>Cap Color</label>
+					<input type="color" name="capcolor" > <br>
+					
+					<label>Expected Delivery Date</label>
+					<input type="date" name="deliverydate">
+				
+				</p>
+				
+				
+				<input type="reset" name="reset" value="Clear Form">
+				<input type="submit" name="submit" value="Register">
+				<input type="button" name="btnage" value="Get Age">
+				
+			</form>
+		</fieldset>
+	
+	</body>
+</html>
