@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jQuery Introduction</title>
+		<meta charset="utf-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+	<body>
+
+		<h2>Welcome to Moat Aacdemy for Developers</h2>
+		<p class="para1">
+			A short story is a piece of prose fiction that typically can be read in one 
+sitting and focuses on a self-contained incident or series of linked 
+incidents, with the intent of evoking a single effect or mood. 
+		</p>
+
+		<form>
+			<input type="text" name="fullname" id="fullname" value="Tim Cook">
+		</form>
+
+		<div id="intro">Relax, you will understand jQuery</div>
+
+		<!-- JS Files -->
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				//var fullname = document.getElementById('fullname').value;
+				var names = $('#fullname').val();
+
+				//alert(names);
+
+				//var relax = document.getElementById('intro').innerHTML;
+				var intro = $('#intro').html();
+				//alert(intro);
+				var heading = $('h2').html();
+				//alert(heading);
+
+				var mypara = document.getElementsByClassName('para1');
+				mypara[0].style = 'color:green';
+
+				var para = $('.para1').css('color', 'red');
+
+
+
+			});
+		</script>
+		
+	</body>
+</html>

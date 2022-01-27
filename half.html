@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Default Parameter Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function halfNumber(num = 10){
+			var result = parseFloat(num) / 2;
+
+			return result;
+		}
+
+		// enter a given number
+		var number = prompt("Enter any number"); 
+		var output = halfNumber(number); // call function halfNumber
+
+		document.write('Half of '+ number + " is "+ output);
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Dropdown Demo</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<select name='year'>");
+			// for loops to print years between 1914 and 2021 inclusive
+			for(var year = 1914; year <= 2021; year++ ){
+				var option = "<option value=" + year + ">";
+				document.write(option);
+				document.write(year);
+				document.write("</option>");
+			}
+		document.write("</select>");
+
+		// for loops to display years between 1914 and 2021 inclusive in unordered list
+		document.write("<ul>");
+			for(number = 1914; number < 2022; number++){
+				document.write("<li>");
+				document.write(number);
+				document.write("</li>");
+			}
+		document.write("</ul>");
+	</script>
+
+	<form>
+		<select>
+			<script type="text/javascript">
+				for(var year = 1914; year <= 2021; year++ ){					
+					document.write("<option value=" + year + ">");
+					document.write(year);
+					document.write("</option>");
+				}
+			</script>
+		</select>
+	</form>
+</body>
+</html>

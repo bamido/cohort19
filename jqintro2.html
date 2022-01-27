@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jQuery Introduction</title>
+		<meta charset="utf-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+	<body>
+
+		<h2>Welcome to Moat Aacdemy for Developers</h2>
+		<p class="para1">
+			A short story is a piece of prose fiction that typically can be read in one 
+sitting and focuses on a self-contained incident or series of linked 
+incidents, with the intent of evoking a single effect or mood. 
+		</p>
+
+		<h2>Second Heading</h2>
+		<p>Second Paragraph</p>
+
+		<h2>Third Heading</h2>
+		<p>Third Paragraph</p>
+
+		<button type="button" id="btnShowHeadings">Show Headings</button>
+
+		<form>
+			<input type="text" name="fullname" id="fullname" value="Tim Cook">
+		</form>
+
+		<div id="intro">Relax, you will understand jQuery</div>
+
+		<!-- JS Files -->
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				// hide any h2 headings
+				$('h2').click(function(){
+					$(this).hide();
+				});
+
+				// show all hidden h2 headings
+				$('#btnShowHeadings').click(function(){
+					$('h2').show();
+				});
+
+				// demo hover event
+				$('#intro').hover(function(){
+					$(this).css('backgroundColor', 'pink');
+
+				}, function(){
+
+					$(this).css('backgroundColor', 'green');
+				});
+
+
+
+			});
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Area of Rectangle</title>
+</head>
+<body>
+	<div id="arearesult"></div>
+	<p>
+		<label>Length</label>
+		<input type="text" name="length" id="length">
+	</p>
+	<p>
+		<label>Breadth</label>
+		<input type="text" name="breadth" id="breadth">
+	</p>
+	<input type="button" name="btnCalculate" id="btnCalculate" value="Calculate" onclick="
+	 var mylength = document.getElementById('length').value;
+	 var mybreadth = document.getElementById('breadth').value;
+	 document.getElementById('arearesult').innerHTML = 'result is ' + rectangleArea(mylength, mybreadth);
+	">
+
+<script type="text/javascript">
+	function rectangleArea(length, breadth){
+		var area = length * breadth;
+		return area;
+	}
+
+</script>
+
+</body>
+</html>
